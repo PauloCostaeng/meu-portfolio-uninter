@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online</title>
+    <link rel="stylesheet" href="TrabalhoWeb.css">
+</head>
+<body>
+    
+    <header>
+        <h1>MEU CURRÍCULO</h1>
+        <nav>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    
+    <!--Primeira seção-->
+    <section id="sobre">
+        <h1>Paulo Victor Campos Costa</h1>
+        <p>Tenho 21 anos, atualmente cursando Engenharia  de Software, resíduo no estado de São Paulo em holambra, 
+            sou um entusiasta da tecnologia, estou sempre buscando aprender algo novo, entre meus  hobbies está a programação, games, esportes.</p>
+        <br>
+        <h2>Desenvolvedor Full-Stack em Formação | Java e arquitetura de Software</h2>
+        <br>
+        <p>Sou um profissional  em transição de  carreira, com o objetivo em me tornar um desenvolvedor Full-Stack.</p>
+        <p>Estou em busca de opurtunidades que me permitam aplicar e expandir meu conhecimento.</p>
+    </section>
+    
+    <!--Segunda seção-->
+    <section id="formacao">
+        <h1>Minha Formação:</h1>
+        <ul>
+            <li>
+                <h2>Engenharia de Software</h2>
+                <p>
+                    <strong>Instituição:</strong> UNINTER(Centro Universitário Internacional)
+                    <br>
+                    <strong>Período:</strong> 2024 - 2028
+                </p>
+            </li>
+
+            <li>
+                <h2>Imersão com inteligência artificial com google gemini.</h2>
+                <p>
+                    <strong>Instituição:</strong> Alura
+                    <br>
+                    <strong>Período:</strong> 2025
+                </p>
+            </li>
+        </ul>
+
+        
+    </section>
+    
+    <!--Terceira seção-->
+    <section id="portfolio">
+        <h1>Meus Projetos</h1>
+        <h2>Meu Currículo Online</h2>
+        <p>
+        <a href="https://github.com/PauloCostaeng/meu-portfolio-uninter.git" target="_blank" style="font-weight: bold;">Código Fonte no GitHub</a>
+        </p>
+            
+    </section>
+    
+    <!--Quinta seção-->
+    <section id="contato">
+        <h1>Fale Comigo</h1>
+        <!--Formulário dentro da seção contato-->
+        <form id="formulario-contato" novalidate> <!--novalidate desativa a validação padrão do HTML5, forçando o JavaScript a assumir o controle.-->
+            <!--label é um rótulo para o id-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required> <!--Required é uma validação rápida do HTML. Mesmo que usando JavaScript para validação, mantê-lo é uma boa prática-->
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required>
+            </textarea> <!--Textare normalmente é onde o usuário digita a mensagem longa.-->
+            
+            <button type="submit">
+                <p>ENVIAR</p>
+            </button>
+        </form>
+        </section>
+
+    <!--link para o JavaScript, que contém a função de validação de formulário -->
+    <script
+        src="TrabalhoWeb.js"
+    ></script> 
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+

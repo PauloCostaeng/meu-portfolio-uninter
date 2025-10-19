@@ -1,0 +1,96 @@
+body {
+    background-image: url('imagem3.jpg'); /*Define a imagem de fundo para toda a página.*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efeito Parallax: Mantém o fundo fixo enquanto o conteúdo rola. */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Estilos do cabeçalho */
+header  {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* ESTILOS DE NAVEGAÇÃO */
+nav a {
+    display: inline block; /* 'inline-block' permite que os links do menu fiquem lado a lado, mas aceitem padding/margin. */
+    padding: 10px 15px;
+    text-decoration: rgba(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: aliceblue;
+
+}
+
+/* ESTILOS DAS SEÇÕES (EFEITO 'FLUTUANTE') */
+section {
+    min-height: 100vh; /* Garante que a seção ocupe no mínimo 100% da altura da tela. */
+    padding: 100px 5%;
+    /* Efeito de transparência suave (rgba) sobre a imagem de fundo do body. */
+    background-color: rgba(26, 30, 39, 0.932);
+    border-radius: 10px;
+    /* Cria a ilusão de profundidade e o efeito "sobressaído" flutuante. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Define margens automáticas para centralizar a seção e garantir que a imagem de fundo apareça nas laterais. */
+    margin: 20px auto;
+    max-width: 1000px;
+}
+    
+#sobre, #portfolio, #formacao, #contato {
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 20px; /* Tamanho da fonte ajustado. */
+    line-height: 1.6em; /* Espaçamento entre linhas. */
+}
+
+/* Combina seletores para estilizar inputs de texto e email.*/
+#contato input[type="text"] 
+#contato input[type="email"]    
+#contato, #mensagem {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* box-sizing: border-box é crucial para responsividade: garante que padding/borda fiquem DENTRO da largura 100%. */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Estilo específico para o Textarea (caixa de mensagem) */
+#contato, #mensagem {
+    height: 130px;
+    /* Controla o redimensionamento: 'none' impede que o usuário arraste e quebre o layout. */
+    resize: none; 
+}
+
+#contato button[type="submit"]{
+    width: 70px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgb(11, 105, 105);
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+/*Estilos aplicados APENAS quando a tela tem no máximo 768px (dispositivos móveis). */
+@media screen and (max-width: 768px){
+    /* No celular, os links do menu que estavam lado a lado (inline-block) passam a ocupar a linha toda (block). */
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+}
+
+#portfolio a, #portfolio a:visited {
+    /*!important garante que a cor branca sobreponha a cor roxa padrão do navegador para links visitados.*/
+    color: aliceblue !important; 
+     
+}
+
